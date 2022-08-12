@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    background: rgb(107, 107, 241);
+    font: normal 15pt arial;
+    background-attachment: fixed;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color: rgb(91, 90, 172);
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+img{
+    border-radius: 50%;
+}
+div{
+    text-align: center;
+    color: rgb(91, 90, 172);
+
+}
+
+div#msg{
+    padding: 20px;
+}
+
+div#ref{
+    padding: 20px;
+}
