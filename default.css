@@ -54,3 +54,16 @@ div#msg{
 div#ref{
     padding: 20px;
 }
+
+p#redes > a{
+    width: 100px;
+    display: inline-block;
+    padding: 10px;
+
+
+}
+
+p#redes > a:hover >img {
+    width: 120px;
+
+}
