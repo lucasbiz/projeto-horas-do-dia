@@ -49,6 +49,7 @@ div{
 
 div#msg{
     padding: 20px;
+    font-size: 25px;
 }
 
 div#ref{
@@ -56,14 +57,15 @@ div#ref{
 }
 
 p#redes > a{
-    width: 100px;
+    width: 60px;
     display: inline-block;
+    box-sizing: border-box;
     padding: 10px;
 
 
 }
 
 p#redes > a:hover >img {
-    width: 120px;
-
+        transform: translate(3px, -3px);
+        transition: 0.3s;
 }

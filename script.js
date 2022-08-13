@@ -4,12 +4,18 @@ function carregar(){
     var ref = window.document.getElementById('linkref')
     var data = new Date()
     var hora = data.getHours()
-    var plural = 'hora'
+    var min = data.getMinutes()
+    var pluralh = 'hora'
+    var pluralm = 'minuto'
     if(hora >= 10) {
-        var plural = 'horas'
+        var pluralh = 'horas'
     }
-    msg.innerHTML = `Agora são ${hora} ${plural}.`
-    if(hora >= 0 && hora < 12 ){
+    if(min >= 10) {
+        var pluralm = 'minutos'
+    }
+
+    msg.innerHTML = `Agora são:<strong> ${hora} ${pluralh} e ${min} ${pluralm}. </strong>`
+    if(hora >= 5 && hora < 12 ){
         //BOM DIA 
         img.src = 'imagens/morning-r.gif'
         document.body.style.backgroundImage = "linear-gradient(to top, #A64732, #F2DF7E)"
