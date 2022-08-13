@@ -7,19 +7,19 @@ function carregar(){
     var min = data.getMinutes()
     var pluralh = 'hora'
     var pluralm = 'minuto'
-    if(hora >= 10) {
+    if(hora > 1) {
         var pluralh = 'horas'
     }
-    if(min >= 10) {
+    if(min > 1) {
         var pluralm = 'minutos'
     }
 
     msg.innerHTML = `Agora são:<strong> ${hora} ${pluralh} e ${min} ${pluralm}. </strong>`
     if(hora >= 5 && hora < 12 ){
         //BOM DIA 
-        img.src = 'imagens/morning-r.gif'
+        img.src = 'imagens/manha-r.gif'
         document.body.style.backgroundImage = "linear-gradient(to top, #A64732, #F2DF7E)"
-        linkref.href = 'https://tenor.com/view/pixel-8bit-retro-memes-doge-gif-18395195'
+        linkref.href = 'https://www.8bitadventures2.com/'
 
     }else if (hora >= 12 && hora < 18){
         //BOA TARDE 
